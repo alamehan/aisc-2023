@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Fragment } from 'react';
+import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
+import { Layout, Menu } from 'antd';
+const { Header, Content, Footer } = Layout;
+
+import { AppstoreOutlined, CalendarOutlined, LinkOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import type { MenuProps, MenuTheme } from 'antd/es/menu';
+
+type MenuItem = Required<MenuProps>['items'][number];
+
+import HomePage from './page/home';
+import AboutPage from './page/about';
+import CompetitionPage from './page/competition';
+import EventPage from './page/event';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage />,
+  },
+  {
+    path: '/about',
+    element: <AboutPage />,
+  },
+  {
+    path: '/competition',
+    element: <CompetitionPage />,
+  },
+  {
+    path: '/event',
+    element: <EventPage />,
+  },
+]);
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <Fragment>
+      <div>main app</div>
+    </Fragment>
+  );
 }
 
-export default App
+export default App;
