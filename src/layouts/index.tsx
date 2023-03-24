@@ -1,18 +1,14 @@
-import { Fragment, ReactNode } from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { ReactNode } from 'react';
+import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 const { Header, Content, Footer } = Layout;
 
 export default function index({ children }: { children: ReactNode }) {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-
   return (
     <Layout>
-      <Header style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%' }}>
+      <Header style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%', background: '#ffffff' }}>
         <Menu
-          theme="dark"
+          theme="light"
           mode="horizontal"
           defaultSelectedKeys={['2']}
           items={[
