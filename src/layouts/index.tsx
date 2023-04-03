@@ -35,7 +35,7 @@ export default function index({ children }: { children: ReactNode }) {
           ]}
         />
       </Header>
-      <Content className="site-layout" style={{ padding: '0 50px', minHeight: '80vh' }}>
+      <Content className="content-wrapper">
         {children}
       </Content>
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>

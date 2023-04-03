@@ -1,0 +1,59 @@
+// Breakpoints Guide
+
+// Mobile: 360px
+// Tablet Potrait: 768px
+// Tablet Landscape: 1040px
+// Desktop: 1440px
+
+.content-wrapper {
+  @media (max-width: 360px) {
+    // background-color: red;
+    min-height: 90vh;
+    padding: 0px 12px;
+  }
+  @media (min-width: 360.1px) and (max-width: 768px) {
+    // background-color: yellow;
+    min-height: 90vh;
+    padding: 0px 24px;
+  }
+  @media (min-width: 768.1px) and (max-width: 1040px) {
+    // background-color: green;
+    min-height: 90vh;
+    padding: 0px 40px;
+  }
+  @media (min-width: 1040.1px) {
+    // background-color: blue;
+    min-height: 90vh;
+    padding: 0px 80px;
+  }
+}
+
+.mt-section {
+  @media (max-width: 360px) {
+    margin-top: 18px;
+  }
+  @media (min-width: 360.1px) and (max-width: 768px) {
+    margin-top: 32px;
+  }
+  @media (min-width: 768.1px) and (max-width: 1040px) {
+    margin-top: 40px;
+  }
+  @media (min-width: 1040.1px) {
+    margin-top: 40px;
+  }
+} 
+
+.mb-section {
+  @media (max-width: 360px) {
+    margin-bottom: 18px;
+  }
+  @media (min-width: 360.1px) and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media (min-width: 768.1px) and (max-width: 1040px) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: 1040.1px) {
+    margin-bottom: 40px;
+  }
+}
