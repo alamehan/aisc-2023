@@ -1,0 +1,180 @@
+@import "@assets/styles/main.less";
+
+@HeroImageDesktop: "@assets/images/home/hero-desktop.png";
+@HeroImageTabletLandscape: "@assets/images/home/hero-tablet-landscape.png";
+@HeroImageTabletPotrait: "@assets/images/home/hero-tablet-potrait.png";
+@HeroImageMobile: "@assets/images/home/hero-mobile.png";
+@ComventDesktop: "@assets/images/home/comvent-desktop.png";
+@ComventTabletLandscape: "@assets/images/home/comvent-tablet-landscape.png";
+@ComventTabletPotrait: "@assets/images/home/comvent-tablet-potrait.png";
+@ComventMobile: "@assets/images/home/comvent-mobile.png";
+@PhotoHere: "@assets/images/photo-here.png";
+@LogoAISC: "@assets/images/logo-aisc.png";
+
+#page-home {
+
+  /* ---------------------------------- ROW 1 --------------------------------- */
+
+  #row1 {
+    @media (min-width: 0.1px) {
+      width: 100%;
+      padding: 12vh 0px;
+      border-radius: 32px 32px 32px 128px;
+
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+
+      background-image: url(@HeroImageMobile);
+    }
+    @media (min-width: 360.1px) {
+      background-image: url(@HeroImageTabletPotrait);
+    }
+    @media (min-width: 768.1px) {
+      background-image: url(@HeroImageTabletLandscape);
+    }
+    @media (min-width: 1040.1px) {
+      background-image: url(@HeroImageDesktop);
+    }
+
+    .row1-col1 {
+      .to-bottom {
+        cursor: pointer;
+      }
+
+      @media (min-width: 0.1px) {
+        padding: 5vh 5vw;
+        text-align: center;
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        padding: 0px 5vw;
+        text-align: left;
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+
+    .row1-col2 {
+      @media (min-width: 0.1px) {
+        .main-photo {
+          display: none;
+        }
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        .main-photo {
+          display: block;
+          width: 100%;
+          padding: 0px 2vw;
+
+          content: url(@PhotoHere);
+        }
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+  }
+
+  /* ---------------------------------- ROW 2 --------------------------------- */
+
+  #row2 {
+    padding: 24px 0px;
+  }
+
+  /* ---------------------------------- ROW 3 --------------------------------- */
+
+  #row3 {
+    padding: 24px 0px;
+  }
+
+  /* ---------------------------------- ROW 4 --------------------------------- */
+
+  #row4 {
+    @media (min-width: 0.1px) {
+      width: 100%;
+      padding: 12vh 0px;
+      border-radius: 32px 128px 32px 32px;
+
+      background-size: cover;
+      background-position: 25%;
+      background-repeat: no-repeat;
+
+      background-image: url(@ComventMobile);
+    }
+    @media (min-width: 360.1px) {
+      background-image: url(@ComventTabletPotrait);
+    }
+    @media (min-width: 768.1px) {
+      background-image: url(@ComventTabletLandscape);
+    }
+    @media (min-width: 1040.1px) {
+      background-image: url(@ComventDesktop);
+    }
+  }
+
+  /* ---------------------------------- ROW 5 --------------------------------- */
+
+  #row5 {
+    padding: 48px 0px;
+
+    .row5-col1 {
+      text-align: center;
+
+      .logo-aisc {
+        content: url(@LogoAISC);
+      }
+    }
+
+    .row5-col2 {
+      @media (min-width: 0.1px) {
+        text-align: center;
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        text-align: start;
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+  }
+
+  /* ---------------------------------- ROW 6 --------------------------------- */
+
+  #row6 {
+    padding: 24px 0px;
+
+    .testi-outer {
+      width: 100%;
+      background-color: @purple-light;
+      border-radius: 32px 32px 128px 128px;
+      text-align: center;
+
+      .testi-inner {
+        // background-color: @lime;
+        padding: 48px 0px;
+
+        .testi-text {
+          padding: 24px;
+          border-radius: 24px 24px 48px 48px;
+        }
+      }
+    }
+  }
+
+  /* ---------------------------------- ROW 7 --------------------------------- */
+
+  #row7 {
+    padding: 24px 0px;
+  }
+
+}

@@ -40,7 +40,7 @@ export default function index({ children }: { children: ReactNode }) {
           ]}
         />
       </Header>
-      <Content className="content-wrapper">
+      <Content className="content-wrapper" style={{ background: '#ffffff' }}>
         {children}
       </Content>
       <Footer style={{ textAlign: 'center' }}>Ant Design ©2023 Created by Ant UED</Footer>
