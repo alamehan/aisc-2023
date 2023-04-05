@@ -34,3 +34,90 @@ html {
 body {
   margin: 0;
 }
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  background: @white;
+  box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.08), 0px 0px 0px 1px rgba(0, 0, 0, 0.02);
+
+  .menu-navbar {
+    justify-content: center;
+    border: none;
+
+    .nav-hover:hover {
+      font-weight: 700;
+      color: @purple;
+    }
+  }
+}
+
+.content {
+  background: @white;
+}
+
+.footer {
+  background: @white;
+  box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.08), 0px 0px 0px 1px rgba(0, 0, 0, 0.02);
+
+  #row-footer {
+    padding: 40px 0px;
+
+    .footer-content-text {
+      display: flex;
+      align-items: center;
+
+
+      @media (min-width: 0.1px) {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 24px;
+
+        img {
+          margin-bottom: 12px;
+        }
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        justify-content: start;
+        flex-direction: row;
+        text-align: start;
+        margin-bottom: 0px;
+
+        img {
+          margin-right: 24px;
+        }
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+
+    .footer-content-sosmed {
+      display: flex;
+      align-items: center;
+
+      @media (min-width: 0.1px) {
+        justify-content: center;
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        justify-content: end;
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 18px 0px;
+}

@@ -21,13 +21,13 @@ import FLG7 from "@assets/images/flags/singapore.svg";
 import FLG8 from "@assets/images/flags/philippines.svg";
 import FLG9 from "@assets/images/flags/thailand.svg";
 import FLG10 from "@assets/images/flags/myanmar.svg";
-import LogoHere from "@assets/images/logo-here.png";
-import UserHere from "@assets/images/user-here.png";
-import SponsorHere from "@assets/images/sponsor-here.png";
-import Dot1 from "@assets/images/dot-1.svg";
-import Dot2 from "@assets/images/dot-2.svg";
-import ArrowLeft from "@assets/images/arrow-left.svg";
-import ArrowRight from "@assets/images/arrow-right.svg";
+import LogoHere from "@assets/images/home/logo-here.png";
+import UserHere from "@assets/images/home/user-here.png";
+import SponsorHere from "@assets/images/home/sponsor-here.png";
+import Dot1 from "@assets/images/home/dot-1.svg";
+import Dot2 from "@assets/images/home/dot-2.svg";
+import ArrowLeft from "@assets/images/home/arrow-left.svg";
+import ArrowRight from "@assets/images/home/arrow-right.svg";
 
 // React Slick Custom Arrow
 function SamplePrevArrow(props: any) {
@@ -41,7 +41,6 @@ function SamplePrevArrow(props: any) {
         ...style,
         display: 'block',
         position: 'absolute',
-        zIndex: '100',
         top: '50%',
         left: '2.5vw',
         width: '18px',
@@ -61,7 +60,6 @@ function SampleNextArrow(props: any) {
         ...style,
         display: 'block',
         position: 'absolute',
-        zIndex: '100',
         top: '50%',
         right: '2.5vw',
         width: '18px',
