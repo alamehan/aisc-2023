@@ -123,7 +123,6 @@ export default function index() {
           </Col>
         </Row>
 
-
         { /* ---------------------------------- ROW 2 --------------------------------- */}
         
         <div id="scroll-target"></div>
