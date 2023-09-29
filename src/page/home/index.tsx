@@ -1,33 +1,36 @@
 import { Row, Col, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
+import { Slide, Fade } from 'react-awesome-reveal';
 
 import './home.less';
 import '../slick.min.css'; // Solusi sementara
 import '../slick-theme.min.css'; // Solusi sementara
 
-import ArrowBottom from "@assets/images/home/arrow-bottom.svg";
-import Established from "@assets/images/home/established.svg";
-import Participant from "@assets/images/home/participant.svg";
-import Competition from "@assets/images/home/competition.svg";
-import TotalPrize from "@assets/images/home/total-prize.svg";
-import FLG1 from "@assets/images/flags/timor-leste.svg";
-import FLG2 from "@assets/images/flags/indonesia.svg";
-import FLG3 from "@assets/images/flags/brunei.svg";
-import FLG4 from "@assets/images/flags/vietnam.svg";
-import FLG5 from "@assets/images/flags/cambodia.svg";
-import FLG6 from "@assets/images/flags/malaysia.svg";
-import FLG7 from "@assets/images/flags/singapore.svg";
-import FLG8 from "@assets/images/flags/philippines.svg";
-import FLG9 from "@assets/images/flags/thailand.svg";
-import FLG10 from "@assets/images/flags/myanmar.svg";
-import LogoHere from "@assets/images/home/logo-here.png";
-import UserHere from "@assets/images/home/user-here.png";
-import SponsorHere from "@assets/images/home/sponsor-here.png";
-import Dot1 from "@assets/images/home/dot-1.svg";
-import Dot2 from "@assets/images/home/dot-2.svg";
-import ArrowLeft from "@assets/images/home/arrow-left.svg";
-import ArrowRight from "@assets/images/home/arrow-right.svg";
+import ArrowBottom from "../../assets/images/home/arrow-bottom.svg";
+import Established from "../../assets/images/home/established.svg";
+import Participant from "../../assets/images/home/participant.svg";
+import Competition from "../../assets/images/home/competition.svg";
+import TotalPrize from "../../assets/images/home/total-prize.svg";
+import FLG1 from "../../assets/images/flags/timor-leste.svg";
+import FLG2 from "../../assets/images/flags/indonesia.svg";
+import FLG3 from "../../assets/images/flags/brunei.svg";
+import FLG4 from "../../assets/images/flags/vietnam.svg";
+import FLG5 from "../../assets/images/flags/cambodia.svg";
+import FLG6 from "../../assets/images/flags/malaysia.svg";
+import FLG7 from "../../assets/images/flags/singapore.svg";
+import FLG8 from "../../assets/images/flags/philippines.svg";
+import FLG9 from "../../assets/images/flags/thailand.svg";
+import FLG10 from "../../assets/images/flags/myanmar.svg";
+import LogoHere from "../../assets/images/home/logo-here.png";
+import UserHere from "../../assets/images/home/user-here.png";
+import SponsorHere from "../../assets/images/home/sponsor-here.png";
+import Dot1 from "../../assets/images/home/dot-1.svg";
+import Dot2 from "../../assets/images/home/dot-2.svg";
+import ArrowLeft from "../../assets/images/home/arrow-left.svg";
+import ArrowRight from "../../assets/images/home/arrow-right.svg";
+import SPExxon from "../../assets/images/home/sp-exxon-mobil.png";
+import SPBadak from "../../assets/images/home/sp-badak-lng.png";
 
 // React Slick Custom Arrow
 function SamplePrevArrow(props: any) {
@@ -126,50 +129,53 @@ export default function index() {
         { /* ---------------------------------- ROW 2 --------------------------------- */}
         
         <div id="scroll-target"></div>
-
         <Row align="middle" justify="space-around" id="row2" className="mb-section">
-          <div className="text-center mt-24 mb-24">
-            <img src={Established} className="mb-18" />
-            <div className="txt-headline purple">2021</div>
-            <div className="txt-body text-body">was established</div>
-          </div>
-          <div className="text-center mt-24 mb-24">
-            <img src={Participant} className="mb-18" />
-            <div className="txt-headline lime">200+</div>
-            <div className="txt-body text-body">pas participants</div>
-          </div>
-          <div className="text-center mt-24 mb-24">
-            <img src={Competition} className="mb-18" />
-            <div className="txt-headline amber">3</div>
-            <div className="txt-body text-body">competitions</div>
-          </div>
-          <div className="text-center mt-24 mb-24">
-            <img src={TotalPrize} className="mb-18" />
-            <div className="txt-headline teal">USD 1000</div>
-            <div className="txt-body text-body">total prizes</div>
-          </div>
+          <Fade cascade damping={0.2}>
+            <div className="text-center mt-24 mb-24">
+              <img src={Established} className="mb-18" />
+              <div className="txt-headline purple">2021</div>
+              <div className="txt-body text-body">was established</div>
+            </div>
+            <div className="text-center mt-24 mb-24">
+              <img src={Participant} className="mb-18" />
+              <div className="txt-headline lime">200+</div>
+              <div className="txt-body text-body">pas participants</div>
+            </div>
+            <div className="text-center mt-24 mb-24">
+              <img src={Competition} className="mb-18" />
+              <div className="txt-headline amber">3</div>
+              <div className="txt-body text-body">competitions</div>
+            </div>
+            <div className="text-center mt-24 mb-24">
+              <img src={TotalPrize} className="mb-18" />
+              <div className="txt-headline teal">USD 1000</div>
+              <div className="txt-body text-body">total prizes</div>
+            </div>
+          </Fade>
         </Row>
 
         { /* ---------------------------------- ROW 3 --------------------------------- */}
 
-        <Row align="middle" justify="center" id="row3" className="mb-section">
-          <Space direction="vertical" align="center" wrap>
-            <div className="txt-display-md linear-combine-txt text-center mb-48">3rd AIChE Student Conference <br /> in Southeast Asia</div>
-            <Space size="small" align="center" wrap className="content-center mb-48">
-              <img src={FLG1} />
-              <img src={FLG2} />
-              <img src={FLG3} />
-              <img src={FLG4} />
-              <img src={FLG5} />
-              <img src={FLG6} />
-              <img src={FLG7} />
-              <img src={FLG8} />
-              <img src={FLG9} />
-              <img src={FLG10} />
+        <Slide direction="right">
+          <Row align="middle" justify="center" id="row3" className="mb-section">
+            <Space direction="vertical" align="center" wrap>
+              <div className="txt-display-md linear-combine-txt text-center mb-48">3rd AIChE Student Conference <br /> in Southeast Asia</div>
+              <Space size="small" align="center" wrap className="content-center mb-48">
+                <img src={FLG1} />
+                <img src={FLG2} />
+                <img src={FLG3} />
+                <img src={FLG4} />
+                <img src={FLG5} />
+                <img src={FLG6} />
+                <img src={FLG7} />
+                <img src={FLG8} />
+                <img src={FLG9} />
+                <img src={FLG10} />
+              </Space>
+              <img src={Dot1} />
             </Space>
-            <img src={Dot1} />
-          </Space>
-        </Row>
+          </Row>
+        </Slide>
 
         { /* ---------------------------------- ROW 4 --------------------------------- */}
 
@@ -178,43 +184,43 @@ export default function index() {
             <div className="txt-headline linear-lime-txt mb-32">Competitions</div>
             <Space size="large" align="center" wrap className="content-center mb-48">
               <div className="text-center mt-12 mb-12">
-                <a href="#">
+                <Link to="/aisc-2023/competition/poster">
                   <img src={LogoHere} />
                   <div className="txt-body white">Poster</div>
-                </a>
+                </Link>
               </div>
               <div className="text-center mt-12 mb-12">
-                <a href="#">
+                <Link to="/aisc-2023/competition/paper">
                   <img src={LogoHere} />
                   <div className="txt-body white">Paper</div>
-                </a>
+                </Link>
               </div>
               <div className="text-center mt-12 mb-12">
-                <a href="#">
+                <Link to="#">
                   <img src={LogoHere} />
-                  <div className="txt-body white">......</div>
-                </a>
+                  <div className="txt-body white">...</div>
+                </Link>
               </div>
             </Space>
             <div className="txt-headline linear-lime-txt mb-32">Events</div>
             <Space size="large" align="center" wrap className="content-center">
               <div className="text-center mt-12 mb-12">
-                <a href="#">
+                <Link to="/aisc-2023/event/pre-events">
                   <img src={LogoHere} />
                   <div className="txt-body white">Pre-Events</div>
-                </a>
+                </Link>
               </div>
               <div className="text-center mt-12 mb-12">
-                <a href="#">
+                <Link to="/aisc-2023/event/conference">
                   <img src={LogoHere} />
                   <div className="txt-body white">Conference</div>
-                </a>
+                </Link>
               </div>
               <div className="text-center mt-12 mb-12">
-                <a href="#">
+                <Link to="/aisc-2023/event/social-night">
                   <img src={LogoHere} />
                   <div className="txt-body white">Social Night</div>
-                </a>
+                </Link>
               </div>
             </Space>
           </Space>
@@ -224,13 +230,17 @@ export default function index() {
 
         <Row align="middle" id="row5" className="mt-section mb-section">
           <Col xs={{ span: 24, order: 1 }} md={{ span: 12, order: 1 }} className="row5-col1">
-            <img className="logo-aisc mt-24 mb-24" />
+            <Slide direction="left">
+              <img className="logo-aisc mt-24 mb-24" />
+            </Slide>
           </Col>
           <Col xs={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} className="row5-col2">
-            <img src={Dot2} className="mb-48" />
-            <div className="txt-headline purple mb-18">AISC</div>
-            <div className="txt-body text-body mb-48">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-            <Link to="/about" className="btn-lime">More About Us</Link>
+            <Slide direction="right">
+              <img src={Dot2} className="mb-48" />
+              <div className="txt-headline purple mb-18">AISC</div>
+              <div className="txt-body text-body mb-48">AISC (AIChE Indonesia Student Conference) is an annual event organized by AIChE and has several competitions, such as paper competitions, presentation competitions, and chemical technology competitions, which are attended by participants from universities throughout Indonesia.</div>
+              <Link to="/aisc-2023/about" className="btn-lime">More About Us</Link>
+            </Slide>
           </Col>
         </Row>
 
@@ -273,32 +283,36 @@ export default function index() {
 
         { /* ---------------------------------- ROW 7 --------------------------------- */}
 
-        <Row align="middle" justify="center" id="row7" className="mb-section">
+          <Row align="middle" justify="center" id="row7" className="mb-section">
           <Space direction="vertical" align="center" wrap>
-            <div className="txt-headline teal text-center mb-section">Sponsor</div>
-            <Space size="middle" align="center" wrap className="content-center mb-section">
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
+            <Slide direction="left">
+              <div className="txt-headline teal text-center mb-section">Sponsor</div>
+              <Space size="middle" align="center" wrap className="content-center mb-section">
+                <img src={SPExxon} />
+                <img src={SPBadak} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+              </Space>
+            </Slide>
+            <img src={Dot1} className="mb-section" />
+            <Slide direction="right">
+              <div className="txt-headline teal text-center mb-section">Supporting Partner</div>
+              <Space size="middle" align="center" wrap className="content-center mb-section">
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                <img src={SponsorHere} />
+                </Space>
+            </Slide>
             </Space>
-            <img src={Dot1} className="mb-section"/>
-            <div className="txt-headline teal text-center mb-section">Supporting Partner</div>
-            <Space size="middle" align="center" wrap className="content-center mb-section">
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-              <img src={SponsorHere} />
-            </Space>
-          </Space>
-        </Row>
+          </Row>
 
       </div>
     </div>

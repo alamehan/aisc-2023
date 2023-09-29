@@ -1,0 +1,260 @@
+// @import "@assets/styles/main.less";
+@import "./src/assets/styles/main.less";
+
+@PhotoHere: "../../assets/images/competitions-events/photo-here.png";
+
+#page-conference {
+
+  /* ---------------------------------- ROW 1 --------------------------------- */
+
+  #row1 {
+    .col {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+
+      background-color: @slate-light;
+      border-radius: 32px 32px 128px 128px;
+      padding: 32px;
+
+      .txt-body {
+        max-width: 640px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  /* ---------------------------------- ROW 2 --------------------------------- */
+
+  #row2 {
+    .col {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      padding: 24px 0px;
+    }
+  }
+
+  /* ---------------------------------- ROW 3 --------------------------------- */
+
+  #row3 {
+    padding: 24px 0px;
+
+    width: 100%;
+    background-color: @purple-light;
+    border-radius: 32px 32px 32px 32px;
+    text-align: center;
+    
+    .row3-col1 {
+      text-align: center;
+
+      .main-photo {
+        display: block;
+        width: 100%;
+        padding: 0px 2vw;
+
+        content: url(@PhotoHere);
+      }
+    }
+
+    .row3-col2 {
+      .oneline {
+        display: flex;
+
+        @media (min-width: 0.1px) {
+          margin-bottom: 24px;
+
+          .only-desktop {
+            display: none;
+          }
+        }
+        @media (min-width: 360.1px) {
+          // Sama seperti di atas
+        }
+        @media (min-width: 768.1px) {
+          margin-bottom: 0px;
+
+          .only-desktop {
+            display: block;
+          }
+        }
+        @media (min-width: 1040.1px) {
+          // Sama seperti di atas
+        }
+      }
+
+      .desc-card {
+        background-color: @purple-surface;
+        border-radius: 24px;
+        padding: 24px;
+      }
+
+      @media (min-width: 0.1px) {
+        text-align: center;
+        padding: 24px;
+
+        .show-br {
+          display: block;
+        }
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        text-align: start;
+        padding: 48px;
+
+        .show-br {
+          display: none;
+        }
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+
+  }
+
+  /* ---------------------------------- ROW 4 --------------------------------- */
+  
+  #row4 {
+    padding: 24px 0px;
+
+    width: 100%;
+    background-color: @lime-light;
+    border-radius: 32px 32px 32px 32px;
+    text-align: center;
+    
+    .row4-col1 {
+      text-align: center;
+
+      .main-photo {
+        display: block;
+        width: 100%;
+        padding: 0px 2vw;
+
+        content: url(@PhotoHere);
+      }
+    }
+
+    .row4-col2 {
+      .oneline {
+        display: flex;
+
+        @media (min-width: 0.1px) {
+          margin-bottom: 24px;
+
+          .only-desktop {
+            display: none;
+          }
+        }
+        @media (min-width: 360.1px) {
+          // Sama seperti di atas
+        }
+        @media (min-width: 768.1px) {
+          margin-bottom: 0px;
+
+          .only-desktop {
+            display: block;
+          }
+        }
+        @media (min-width: 1040.1px) {
+          // Sama seperti di atas
+        }
+      }
+
+      .desc-card {
+        background-color: @purple-surface;
+        border-radius: 24px;
+        padding: 24px;
+      }
+
+      @media (min-width: 0.1px) {
+        text-align: center;
+        padding: 24px;
+
+        .show-br {
+          display: block;
+        }
+      }
+      @media (min-width: 360.1px) {
+        // Sama seperti di atas
+      }
+      @media (min-width: 768.1px) {
+        text-align: start;
+        padding: 48px;
+
+        .show-br {
+          display: none;
+        }
+      }
+      @media (min-width: 1040.1px) {
+        // Sama seperti di atas
+      }
+    }
+    
+  }
+
+  /* ---------------------------------- ROW 5 --------------------------------- */
+  
+  #row5 {
+    .col {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      padding: 24px 0px;
+    }
+  }
+  
+  /* ---------------------------------- ROW 6 --------------------------------- */
+  
+  #row6 {
+    .col {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      padding: 24px 0px;
+    }
+  }
+  
+  /* ---------------------------------- ROW 7 --------------------------------- */
+
+  #row7 {
+    text-align: center;
+
+    .row7-col1 {
+      .outer-card {
+        background-color: @lime-light;
+        border-radius: 32px;
+        padding: 48px;
+
+        .inner-card {
+          padding: 24px;
+
+          .flex-card {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .row7-col2 {
+      .outer-card {
+        background-color: @amber-light;
+        border-radius: 32px;
+        padding: 48px;
+
+        .inner-card {
+          padding: 24px;
+
+          .flex-card {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+}
